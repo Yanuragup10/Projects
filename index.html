@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protected Love Letter</title>
+ <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f7b4e8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #letter {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eef0e6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+ </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Protected Love Letter <br> for you 'kutiya'</h1>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="unlockLetter()">Unlock</button>
+    <div id="letter" style="display: none;"></div>
+  </div>
+ 
+  <script>
+    function unlockLetter() {
+    var password = document.getElementById('password').value;
+    var letter = document.getElementById('letter');
+  
+    // Replace 'yourpassword' with the actual password you want to use
+    if (password === 'Anurag@10') {
+      letter.style.display = 'block';
+      letter.innerHTML = "My Dearest Love,<br><br>I want you to know how much you mean to me. You are my everything, my reason for waking up with a smile every morning.<br><br>Every moment spent with you is like a precious gem, something I cherish deeply in my heart.<br><br>I love you more than words can express, and I promise to spend the rest of my days showing you just how much you mean to me.<br><br>Forever Yours,<br>[Sunil]";
+    } else {
+      alert('Incorrect password. Please try again.');
+    }
+  }
+  
+  </script>
+</body>
+</html>
